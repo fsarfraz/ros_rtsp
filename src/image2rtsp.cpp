@@ -36,7 +36,7 @@ void Image2RTSPNodelet::onInit() {
     nh.getParam("port", this->port);
 
     video_mainloop_start();
-  rtsp_server = rtsp_server_create(port);
+    rtsp_server = rtsp_server_create(port);
 
     // Go through and parse each stream
     for(XmlRpc::XmlRpcValue::ValueStruct::const_iterator it = streams.begin(); it != streams.end(); ++it)

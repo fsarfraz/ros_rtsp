@@ -5,7 +5,7 @@ streams: # Cannot rename - must leave this as is.
   stream-yay:
     type: topic
     source: /yolo/image_raw
-    mountpoint: /ros
+    mountpoint: /front
     caps: video/x-raw,framerate=10/1,width=640,height=480
     bitrate: 500
 
